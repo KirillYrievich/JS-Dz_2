@@ -32,7 +32,77 @@ Infinity делать не нужно, однако, в случае если б
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  /**
+  * Ф-ция выполняет сложение 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Сумма первого и второго числа.
+  */
+  function sum(num_1, num_2) {
+    return num_1 + num_2;
+  }
+
+  /**
+  * Ф-ция выполняет вычитание 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Разность переданных чисел.
+  */
+  function subtract(num_1, num_2) {
+    if (num_1 > num_2) {
+      return num_1 - num_2;
+    } else {
+      return num_2 - num_1;
+    }
+  }
+
+  /**
+  * Ф-ция выполняет умножение 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Произведение первого и второго числа.
+  */
+  function multiplication(num_1, num_2) {
+    return num_1 * num_2;
+  }
+
+  /**
+  * Ф-ция выполняет деление 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Результат деления первого и второго числа.
+  */
+  function division(num_1, num_2) {
+    return num_1 / num_2;
+  }
+  
+    /**
+    * Ф-ция возвращает результат операции, который передан в
+    * параметр operation для двух первых аргументов (arg1 и arg2).
+    * @param {number} arg1 - Первое число.
+    * @param {number} arg2 - Второе число.
+    * @param {string} operation - Операция ("+", "-", "*", "/").
+    * @return {number} - Результат функции.
+    */
+  function mathOperation(arg1, arg2, operation) {
+    if (operation == "+") {
+      return sum(arg1, arg2);
+    } else if (operation == "-") {
+      return subtract(arg1, arg2);
+    } else if (operation == "*") {
+      return multiplication(arg1, arg2);
+    } else if (operation == "/") {
+      return division(arg1, arg2);
+    } else {
+      return NaN;
+    }
+  };
+
+  console.log(mathOperation(6, 10, '+'));
+  console.log(mathOperation(6, 10, '-'));
+  console.log(mathOperation(6, 10, '*'));
+  console.log(mathOperation(6, 10, '/'));
+  console.log(mathOperation(6, 10, '?'));
 </script>
 </body>
 </html>
