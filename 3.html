@@ -21,7 +21,16 @@
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  const a = +prompt("Введите первое любое цело число: ");
+  const b = +prompt("Введите второе любое цело число: ");
+
+  if (a > 0 & b > 0) {
+    alert(a - b);
+  } else if (a < 0 & b < 0) {
+    alert(a * b);
+  } else if ((a < 0 & b > 0) || ((a > 0 & b < 0))) {
+    alert(a + b);
+  }
 </script>
 </body>
 </html>
