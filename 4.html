@@ -31,7 +31,49 @@
 <script>
   "use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
+  /**
+  * Ф-ция выполняет сложение 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Сумма первого и второго числа.
+  */
+  function sum (num_1, num_2) {
+    return num_1 + num_2;
+  }
+
+  /**
+  * Ф-ция выполняет вычитание 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Разность переданных чисел.
+  */
+  function subtract(num_1, num_2) {
+      if (num_1 > num_2) {
+        return num_1 - num_2;
+      } else {
+        return num_2 - num_1;
+      }
+    }
+
+  /**
+  * Ф-ция выполняет умножение 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Произведение первого и второго числа.
+  */
+  function multiplication(num_1, num_2) {
+    return num_1 * num_2;
+  }
+
+  /**
+  * Ф-ция выполняет деление 2-х переданных в нее чисел.
+  * @param {number} num_1 - Первое число.
+  * @param {number} num_2 - Второе число.
+  * @return {number} - Результат деления первого и второго числа.
+  */
+  function division(num_1, num_2) {
+    return num_1 / num_2;
+  }
 </script>
 </body>
 </html>
